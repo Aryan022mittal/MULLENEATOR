@@ -35,6 +35,7 @@ class _StoryPageState extends State<StoryPage> {
         decoration: BoxDecoration(
           image: DecorationImage(
               image: AssetImage('images/background.png'),
+            fit: BoxFit.fill,
 
           ),
         ),
@@ -65,12 +66,13 @@ class _StoryPageState extends State<StoryPage> {
                           });
                         },
                         style:TextButton.styleFrom(
-                          foregroundColor: Colors.red,
+                          backgroundColor: Colors.red,
                         ),
                         child:Text(
                           storyBrain.getChoice1(),
                           style: TextStyle(
                             fontSize: 20.0,
+                            color: Colors.white,
                           ),
                         ),
                       ),
@@ -90,12 +92,13 @@ class _StoryPageState extends State<StoryPage> {
                         });
                       },
                       style:TextButton.styleFrom(
-                        foregroundColor: Colors.green,
+                        backgroundColor: Colors.green,
                       ),
                       child:Text(
                         storyBrain.getChoice2(),
                         style: TextStyle(
                           fontSize: 20.0,
+                          color: Colors.white,
                         ),
                       ),
                     ),
